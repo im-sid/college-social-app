@@ -1,0 +1,152 @@
+/* General Reset */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  color: #333333;
+  line-height: 1.6;
+}
+
+/* Main Profile Container */
+.profile-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 40px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* User Details Section */
+.user-details {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.user-details img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+  border: 3px solid #007bff;
+}
+
+.user-details h2 {
+  font-size: 28px;
+  margin: 10px 0;
+}
+
+.user-details p {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+.edit-profile-btn {
+  padding: 12px 24px;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.edit-profile-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Toggle Buttons Section */
+.toggle-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.toggle-button {
+  padding: 12px 24px;
+  background-color: #f0f0f0;
+  color: #333333;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.toggle-button.active {
+  background-color: #007bff;
+  color: #ffffff;
+}
+
+.toggle-button:hover {
+  background-color: #e0e0e0;
+}
+
+.toggle-button.active:hover {
+  background-color: #0056b3;
+}
+
+/* Posts and Acquaintances Section */
+.posts-acquaintances {
+  text-align: left;
+}
+
+.posts-acquaintances h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.post-item,
+.acquaintance-item {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.post-item h4 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.post-item p {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.post-item .tags {
+  font-size: 14px;
+  color: #888888;
+}
+
+.acquaintance-item img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 15px;
+}
+
+.acquaintance-item div strong {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.acquaintance-item div p {
+  font-size: 16px;
+  color: #555555;
+}
+
+/* No Data Message */
+.no-data {
+  font-size: 18px;
+  color: #888888;
+  text-align: center;
+  margin-top: 40px;
+}

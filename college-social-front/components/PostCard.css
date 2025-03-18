@@ -1,0 +1,75 @@
+.post-card {
+  background-color: #fff;
+  border: 1px solid #dbdbdb;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 15px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  width: 100%; /* Ensure the post card takes the full width of the parent */
+  box-sizing: border-box; /* Include padding in width calculation */
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.user-info img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  margin-right: 10px;
+  border: 1px solid #dbdbdb;
+}
+
+.title {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 5px 0;
+  color: #262626;
+}
+
+.description {
+  font-size: 14px;
+  color: #262626;
+  margin: 5px 0;
+}
+
+.tags {
+  margin: 5px 0;
+}
+
+.tag {
+  background-color: #f0f0f0;
+  padding: 3px 8px;
+  margin-right: 5px;
+  border-radius: 12px;
+  font-size: 12px;
+  color: #262626;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.comment-button {
+  padding: 5px 10px;
+  background: none;
+  border: none;
+  font-size: 14px;
+  color: #262626;
+  cursor: pointer;
+}
+
+.comment-button:hover {
+  color: #007bff;
+}
+
+.comment-section {
+  margin-top: 10px;
+  border-top: 1px solid #efefef;
+  padding-top: 10px;
+}
