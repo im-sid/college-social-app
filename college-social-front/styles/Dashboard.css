@@ -1,0 +1,99 @@
+/* Reset default margins and ensure full height */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden; /* Prevent body scrolling */
+}
+
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Full viewport height */
+  width: 100%;
+  background-color: #fafafa; /* Instagram-like background */
+  position: relative; /* Establish positioning context */
+}
+
+/* Fixed top section (filter toggle) */
+.filter-toggle {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  background-color: #fff;
+  border-bottom: 1px solid #dbdbdb; /* Instagram-like border */
+  text-align: center;
+  z-index: 10; /* Ensure it stays above content */
+  height: 50px; /* Fixed height */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.filter-toggle button {
+  padding: 8px 16px;
+  margin: 0 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #f0f0f0;
+  font-size: 14px;
+}
+
+.filter-toggle button.active {
+  background-color: #007bff;
+  color: #fff;
+}
+
+/* Scrollable content area (adjusted for fixed top and bottom) */
+.content {
+  flex: 1; /* Take up remaining space */
+  max-width: 800px; /* Increased width from 600px to 800px */
+  width: 100%; /* Ensure it uses the full width up to max-width */
+  margin: 0 auto;
+  overflow-y: auto; /* Scrollable content */
+  padding: 60px 10px 60px; /* Padding for top (50px) and bottom (50px) fixed sections */
+  background-color: #fafafa; /* Match Instagram's background */
+  /* Hide scrollbar for Firefox */
+  scrollbar-width: none;
+}
+
+/* Hide scrollbar for Chrome, Edge, and Safari */
+.content::-webkit-scrollbar {
+  display: none;
+}
+
+/* Fixed bottom navbar */
+.navbar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  border-top: 1px solid #dbdbdb;
+  padding: 8px 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 50px; /* Fixed height */
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  z-index: 10; /* Ensure it stays above content */
+}
+
+.navbar button {
+  padding: 5px 10px;
+  background: none;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  color: #262626; /* Instagram-like text color */
+}
+
+.navbar button:hover {
+  color: #007bff;
+}
+
+/* Ensure content doesn't overlap with fixed sections */
+.content > *:last-child {
+  margin-bottom: 10px; /* Extra spacing at the bottom */
+}

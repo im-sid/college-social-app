@@ -1,0 +1,28 @@
+.like-button {
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    background: none;
+    border: none;
+    font-size: 14px;
+    color: #262626; /* Instagram-like text color */
+    cursor: pointer;
+    transition: color 0.2s ease;
+  }
+  
+  .like-button:hover {
+    color: #ed4956; /* Instagram-like red for heart hover */
+  }
+  
+  .like-button.liked {
+    color: #ed4956; /* Red when liked */
+  }
+  
+  .heart-icon {
+    font-size: 18px;
+    margin-right: 5px;
+  }
+  
+  .likes-count {
+    font-weight: 500;
+  }
